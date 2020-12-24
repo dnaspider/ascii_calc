@@ -4,14 +4,15 @@ using namespace std;
 
 int main()
 {
-    cout << "ASCII code calculator\nInput a string and press enter.\nPress Ctrl+C to exit." << endl;
+    cout << "ASCII Code Calculator\nInput a string and press ENTER.\nPress ENTER to exit." << endl;
 
-    string qq;
+    string qq{};
     while (1)
     {
         getline(cin, qq);
-        int s = 0;
+        int s{};
         size_t len = qq.length() - 1;
+        if (len + 1 == 0) break;
         for (size_t i = 0; i <= len; i++)
         {
             cout << (int)qq[i];
